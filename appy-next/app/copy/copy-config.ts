@@ -276,42 +276,89 @@ export const copyConfig = {
   // Footer
   footer: {
     logo: {
-      src: "/images/cr-batiment-pro-logo.svg",
+      src: "/images/logo.png",
       alt: "CR Batiment Pro logo",
     },
-    copyright: "© 2024 CR Batiment Pro. Tous droits réservés.",
+    blocks: [
+      {
+        title: "Paris",
+        links: [
+          { label: "1er arrondissement", href: "#0" },
+          { label: "2e arrondissement", href: "#0" },
+          { label: "3e arrondissement", href: "#0" },
+        ],
+      },
+      {
+        title: "Lyon",
+        links: [
+          { label: "1er arrondissement", href: "#0" },
+          { label: "2e arrondissement", href: "#0" },
+          { label: "3e arrondissement", href: "#0" },
+        ],
+      },
+      {
+        title: "Marseille",
+        links: [
+          { label: "1er arrondissement", href: "#0" },
+          { label: "2e arrondissement", href: "#0" },
+          { label: "3e arrondissement", href: "#0" },
+        ],
+      },
+      {
+        title: "Bordeaux",
+        links: [
+          { label: "Centre-ville", href: "#0" },
+          { label: "Bastide", href: "#0" },
+          { label: "Caudéran", href: "#0" },
+        ],
+      },
+    ],
     socialLinks: [
       {
         platform: "Facebook",
-        href: "https://www.facebook.com/crbatimentpro",
-      },
-      {
-        platform: "Instagram",
-        href: "https://www.instagram.com/crbatimentpro",
-      },
-      {
-        platform: "LinkedIn",
-        href: "https://www.linkedin.com/company/slowestudio",
+        href: "https://facebook.com/crbatimentpro",
+        ariaLabel: "Facebook",
       },
       {
         platform: "X",
-        href: "https://www.x.com/crbatimentpro",
+        href: "https://x.com/crbatimentpro",
+        ariaLabel: "X (formerly Twitter)",
       },
       {
-        platform: "TikTok",
-        href: "https://www.tiktok.com/@crbatimentpro",
+        platform: "Instagram",
+        href: "https://instagram.com/crbatimentpro",
+        ariaLabel: "Instagram",
       },
       {
-        platform: "Youtube",
-        href: "https://www.youtube.com/crbatimentpro",
+        platform: "LinkedIn",
+        href: "https://linkedin.com/company/crbatimentpro",
+        ariaLabel: "LinkedIn",
       },
     ],
+    bottomLinks: [
+      { label: "Conditions générales", href: "#0" },
+      { label: "Politique de confidentialité", href: "#0" },
+    ],
+    copyright: "© 2024 CR Batiment Pro. Tous droits réservés.",
+    address: {
+      title: "Notre adresse",
+      lines: ["CR Batiment Pro", "55 rue Petit", "75019 Paris"],
+    },
+    contact: {
+      title: "Nous contacter",
+      phone: "07 55 81 92 18",
+      email: "contact@crbatimentpro.fr",
+    },
+    hours: {
+      title: "Horaires",
+      text: "Ouvert 7j/7, 24h/24",
+    },
   },
   footerEyebrow: "Contactez-nous",
-  footerTitle1: "Besoin d'un électricien professionnel ?",
-  footerTitle2: "Nous sommes à votre service 24h/24, 7j/7",
+  footerTitle1: "Prêt à faire appel à nos services ?",
+  footerTitle2: "",
   footerSubtitle:
-    "CR BATIMENT PRO est votre partenaire de confiance pour tous vos besoins en électricité. Que ce soit pour une urgence ou un projet planifié, notre équipe d'artisans diplômés est là pour vous.",
+    "Que ce soit pour une urgence ou un projet planifié, notre équipe d'artisans professionnels est là pour vous aider.",
   footerCTALink: "/contact",
   footerCTAButton: "Contactez-nous",
 

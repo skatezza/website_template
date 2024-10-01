@@ -11,6 +11,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import Header from "@/components/ui/header";
+import Footer from "@/components/ui/footer";
 import { FooterAddress } from "@/components/ui/footer-address";
 
 const inter = Inter({
@@ -49,7 +50,7 @@ export default function RootLayout({
           <div className="flex flex-col min-h-screen overflow-hidden">
             <Header />
             <main className="grow">{children}</main>
-            <FooterAddress />
+            <Footer />
           </div>
         </Theme>
       </body>
