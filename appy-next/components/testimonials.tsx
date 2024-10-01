@@ -1,23 +1,21 @@
 import Image from "next/image";
 
 export default function Testimonials({ content }: { content: any }) {
-  const { title, subtitle, items } = content;
-
   return (
     <section className="relative">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="py-12 md:py-20">
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h2 className="h2 mb-4">{title}</h2>
+            <h2 className="h2 mb-4">{content.title}</h2>
             <p className="text-xl text-gray-600 dark:text-gray-300">
-              {subtitle}
+              {content.subtitle}
             </p>
           </div>
 
           {/* Testimonials */}
           <div className="max-w-sm mx-auto grid gap-8 lg:grid-cols-3 lg:gap-6 items-start lg:max-w-none">
-            {items.map((item: any, index: any) => (
+            {content.items.map((item: any, index: any) => (
               <div
                 key={index}
                 className="flex flex-col h-full p-6 bg-gray-800"

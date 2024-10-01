@@ -40,7 +40,7 @@ export default function RootLayout({
   });
 
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="fr" suppressHydrationWarning>
       {/* suppressHydrationWarning: https://github.com/vercel/next.js/issues/44343 */}
       <body
         className={`${inter.variable} ${redhat.variable} font-inter antialiased bg-white text-gray-900 dark:bg-zinc-900 dark:text-gray-100 tracking-tight`}

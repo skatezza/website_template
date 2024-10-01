@@ -8,7 +8,6 @@ export const copyConfig = {
     navItems: [
       { label: "Accueil", href: "/" },
       { label: "À propos", href: "/about" },
-      { label: "Témoignages", href: "/testimonials" },
       { label: "Contact", href: "/contact" },
     ],
     ctaButton: "Contactez-nous",
@@ -21,15 +20,20 @@ export const copyConfig = {
       description: "Page d'accueil de CR Batiment Pro",
     },
     hero: {
-      heroImage: "/images/electricien.jpg",
+      heroImage: "/images/electricien6.webp",
       title: "Votre électricien de confiance à Paris",
       subtitle:
         "Interventions rapides 24h/24 et 7j/7 pour tous vos besoins en électricité générale.",
       cta: {
         label: "Demander un devis",
+        ctaDescription:
+          "Nous vous enverrons un SMS avec une confirmation de réception.",
         href: "/contact",
         ctaPlaceholder: "Entrez votre numéro de téléphone",
       },
+      ctaButtonLink: "/contact",
+      ctaButtonText1: "Demander un devis",
+      ctaButtonText2: "Voir nos services",
       steps: [
         { description: "Artisans diplômés à votre service" },
         { description: "Garantie décennale sur tous nos travaux" },
@@ -37,13 +41,15 @@ export const copyConfig = {
       ],
     },
     featuresBlocks: {
-      title: "Nos services",
+      smallTitle: "Nos services",
+      bigTitle: "Des services pour tous vos besoins en électricité",
       features: [
         {
           title: "Installation électrique",
           description: "Câblage, tableaux électriques, mise aux normes",
+          image: "/images/installation-electrique.jpg",
           icon: "bolt",
-          href: "https://hello.fr",
+          href: "/contact",
           color: {
             from: "rose-500",
             to: "rose-400",
@@ -53,8 +59,9 @@ export const copyConfig = {
         {
           title: "Dépannage 24/7",
           description: "Intervention rapide pour toute panne électrique",
+          image: "/images/depannage-electrique.jpg",
           icon: "wrench",
-          href: "https://hello.fr",
+          href: "/contact",
           color: {
             from: "rose-500",
             to: "rose-400",
@@ -64,8 +71,9 @@ export const copyConfig = {
         {
           title: "Rénovation électrique",
           description: "Mise à niveau de votre installation existante",
+          image: "/images/renovation-electrique.jpg",
           icon: "home",
-          href: "https://hello.fr",
+          href: "/contact",
           color: {
             from: "rose-500",
             to: "rose-400",
@@ -75,8 +83,9 @@ export const copyConfig = {
         {
           title: "Domotique",
           description: "Solutions intelligentes pour votre habitat",
+          image: "/images/domotique.jpg",
           icon: "💡",
-          href: "https://hello.fr",
+          href: "/contact",
           color: {
             from: "rose-500",
             to: "rose-400",
@@ -132,11 +141,10 @@ export const copyConfig = {
   },
 
   // About page
-  // About page
   about: {
-    bigHeroBg: "/images/hero-bg-02.jpg",
-    heroImage: "/images/hero-bg.jpg",
-    title: "À propos de CR Batiment Pro",
+    bigHeroBg: "/images/electricien2.jpeg",
+    heroImage: "/images/electricien3.jpg",
+    title: "CR Batiment Pro",
     subtitle: "Votre partenaire de confiance en électricité depuis 2010",
     description:
       "CR Batiment Pro est une entreprise d'électricité générale basée à Paris. Forte d'une expérience de plus de 10 ans, notre équipe d'artisans diplômés intervient rapidement 7j/7 et 24h/24 pour tous vos besoins en électricité, que ce soit en urgence ou sur rendez-vous.",
@@ -160,6 +168,10 @@ export const copyConfig = {
     aboutFeaturesTitle: "Nos services",
     aboutFeaturesDescription:
       "Chez CR Batiment Pro, nous proposons une gamme complète de services d'électricité pour tous vos besoins, de la simple réparation à la rénovation complète.",
+    aboutService1: "Installation électrique",
+    aboutService2: "Dépannage 24/7",
+    aboutService3: "Rénovation électrique",
+    aboutService4: "Domotique",
     team: [
       {
         name: "Charles Renaud",
@@ -179,33 +191,39 @@ export const copyConfig = {
     title: "Ce que disent nos clients",
     subtitle:
       "Découvrez les expériences de nos clients satisfaits avec CR Batiment Pro.",
+    cta: {
+      label: "Demander un devis",
+      href: "/contact",
+    },
+    ctaButtonLink: "/contact",
+    ctaButtonText: "Demander un devis",
+    clients: {
+      title: "Ils nous font confiance",
+      logos: [
+        { src: "/images/client-logo-1.svg", alt: "Client 1" },
+        { src: "/images/client-logo-2.svg", alt: "Client 2" },
+        { src: "/images/client-logo-3.svg", alt: "Client 3" },
+        { src: "/images/client-logo-4.svg", alt: "Client 4" },
+        { src: "/images/client-logo-5.svg", alt: "Client 5" },
+        { src: "/images/client-logo-6.svg", alt: "Client 6" },
+        { src: "/images/client-logo-7.svg", alt: "Client 7" },
+        { src: "/images/client-logo-8.svg", alt: "Client 8" },
+      ],
+    },
+    circles: {
+      title: "Ce que disent nos clients",
+      subtitle:
+        "Découvrez les expériences de nos clients satisfaits avec CR Batiment Pro.",
+    },
     items: [
       {
         quote:
-          "Très bonne expérience pour le remplacement d'un tablier complet fait avec du très grand professionnalisme. Pro dans leur travail, engagements et rigueur. Je recommande fortement.",
-        name: "BakÀRizConnais",
-        role: "Client",
-        company: "Houilles",
-        image: {
-          src: "/images/testimonial-01.jpg",
-          alt: "Témoignage client",
-        },
+          "CR Batiment Pro a réparé ma chaudière en moins de 2 heures. Très professionnel et à l'écoute de nos besoins.",
+        name: "Alexandre",
+        role: "Client 1",
+        image: "/images/alexandre.jpg",
       },
     ],
-    cta: {
-      title: "Besoin d'un électricien ?",
-      subtitle:
-        "Contactez CR Batiment Pro pour tous vos projets d'électricité. Devis gratuit et intervention rapide.",
-      buttonText: "Nous contacter",
-      buttonLink: "/contact",
-    },
-  },
-  cta: {
-    title: "Besoin d'un électricien ?",
-    subtitle:
-      "Contactez CR Batiment Pro pour tous vos projets d'électricité. Devis gratuit et intervention rapide.",
-    buttonText: "Nous contacter",
-    buttonLink: "/contact",
   },
 
   // Contact page

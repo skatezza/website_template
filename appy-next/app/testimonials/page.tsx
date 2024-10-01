@@ -10,14 +10,13 @@ import Carousel from "@/components/testimonials-carousel";
 import Circles from "@/components/testimonials-circles";
 import Cta from "@/components/cta";
 import { copyConfig } from "@/app/copy/copy-config";
+
 export default function Testimonials() {
   return (
     <>
-      <Hero />
-      <Clients />
-      <Video />
-      <Carousel />
-      <Circles />
+      <Hero content={copyConfig.testimonials} />
+
+      <Circles content={copyConfig.testimonials.circles} />
       <Cta content={copyConfig.testimonials.cta} />
     </>
   );

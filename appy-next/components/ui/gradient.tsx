@@ -4,15 +4,7 @@ export function Gradient({
   className,
   ...props
 }: React.ComponentPropsWithoutRef<"div">) {
-  return (
-    <div
-      {...props}
-      className={clsx(
-        className,
-        "bg-gradient-to-br dark:from-zinc-900 dark:to-zinc-800 from-neutral-50 to-neutral-50"
-      )}
-    />
-  );
+  return <div {...props} className={clsx(className, "bg-white")} />;
 }
 
 export function GradientBackground({ className }: { className?: string }) {

@@ -21,12 +21,12 @@ export default function CTA({ content }: { content: any }) {
 
               {/* CTA button */}
               <div>
-                <Link
-                  href={content.buttonLink}
+                <a
+                  href={content.ctaButtonLink}
                   className="btn text-blue-600 bg-gradient-to-r from-blue-100 to-white"
                 >
-                  {content.buttonText}
-                </Link>
+                  {content.ctaButtonText}
+                </a>
               </div>
             </div>
           </div>

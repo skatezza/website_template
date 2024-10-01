@@ -12,13 +12,13 @@ function CallToAction() {
     <div className="relative pb-16 pt-20 text-center sm:py-24">
       <hgroup>
         <Subheading>{copyConfig.footerEyebrow}</Subheading>
-        <p className="mt-6 text-3xl font-medium tracking-tight text-gray-950 sm:text-5xl dark:text-white">
+        <p className="mt-6 text-3xl font-medium tracking-tight text-gray-950 sm:text-5xl">
           {copyConfig.footerTitle1}
           <br />
           {copyConfig.footerTitle2}
         </p>
       </hgroup>
-      <p className="mx-auto mt-6 max-w-xs text-sm/6 text-gray-500 dark:text-white">
+      <p className="mx-auto mt-6 max-w-xs text-sm/6 text-gray-600">
         {copyConfig.footerSubtitle}
       </p>
       <div className="mt-6">
@@ -69,7 +69,7 @@ function SocialLinks() {
         href={copyConfig.footerFacebookLink}
         target="_blank"
         aria-label="Visit us on Facebook"
-        className="text-gray-950 data-[hover]:text-gray-950/75"
+        className="text-gray-600 hover:text-gray-800"
       >
         <SocialIconFacebook className="size-4" />
       </Link>
@@ -77,7 +77,7 @@ function SocialLinks() {
         href={copyConfig.footerXLink}
         target="_blank"
         aria-label="Visit us on X"
-        className="text-gray-950 data-[hover]:text-gray-950/75"
+        className="text-gray-600 hover:text-gray-800"
       >
         <SocialIconX className="size-4" />
       </Link>
@@ -85,7 +85,7 @@ function SocialLinks() {
         href={copyConfig.footerLinkedInLink}
         target="_blank"
         aria-label="Visit us on LinkedIn"
-        className="text-gray-950 data-[hover]:text-gray-950/75"
+        className="text-gray-600 hover:text-gray-800"
       >
         <SocialIconLinkedIn className="size-4" />
       </Link>
@@ -95,7 +95,7 @@ function SocialLinks() {
 
 function Copyright() {
   return (
-    <div className="text-sm/6 text-gray-950">
+    <div className="text-sm/6 text-gray-500">
       &copy; {new Date().getFullYear()} {copyConfig.footerCopyright}
     </div>
   );
@@ -104,10 +104,8 @@ function Copyright() {
 function Address({ title, lines }: { title: string; lines: string[] }) {
   return (
     <div>
-      <h3 className="text-sm/6 font-medium text-gray-950 dark:text-white">
-        {title}
-      </h3>
-      <address className="mt-3 space-y-1 text-sm/6 not-italic text-gray-600 dark:text-white">
+      <h3 className="text-sm/6 font-medium text-gray-900">{title}</h3>
+      <address className="mt-3 space-y-1 text-sm/6 not-italic text-gray-600">
         {lines.map((line, index) => (
           <p key={index}>{line}</p>
         ))}

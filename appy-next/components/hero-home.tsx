@@ -1,78 +1,85 @@
-import VideoThumb from "@/public/images/mockup-image-01.jpg";
-import ModalVideoIphone from "@/components/modal-video-iphone";
+import { Popover, PopoverButton, PopoverPanel } from "@headlessui/react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { ChevronRightIcon } from "@heroicons/react/20/solid";
 
 export default function HeroHome({ content }: { content: any }) {
   return (
-    <section>
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="pt-32 pb-10 md:pt-40 md:pb-16">
-          {/* Hero content */}
-          <div className="md:grid md:grid-cols-12 md:gap-12 lg:gap-20 items-center">
-            {/* Content */}
-            <div className="md:col-span-7 lg:col-span-7 mb-8 md:mb-0 text-center md:text-left">
-              <h1
-                className="h1 lg:text-6xl mb-4 font-rose-hat-display font-black"
-                data-aos="fade-down"
-              >
-                {content.title}
-              </h1>
-              <p
-                className="text-xl text-gray-600 dark:text-gray-300"
-                data-aos="fade-down"
-                data-aos-delay="150"
-              >
-                {content.subtitle}
-              </p>
-              {/* CTA form */}
-              <form className="mt-8" data-aos="fade-down" data-aos-delay="300">
-                <div className="flex flex-col sm:flex-row justify-center max-w-sm mx-auto sm:max-w-lg md:mx-0">
-                  <input
-                    type="tel"
-                    className="form-input w-full mb-2 sm:mb-0 sm:mr-2"
-                    placeholder={content.cta.ctaPlaceholder}
-                    aria-label="Phone number"
-                  />
-                  <a
-                    className="btn text-white bg-rose-500 hover:bg-rose-400 shrink-0"
-                    href={content.cta.href}
-                  >
-                    {content.cta.label}
-                  </a>
-                </div>
-                {/* Success message */}
-                {/* <p className="text-center md:text-left mt-2 opacity-75 text-sm">Thanks for subscribing!</p> */}
-              </form>
-              <ul
-                className="max-w-sm sm:max-w-md mx-auto md:max-w-none text-gray-600 dark:text-gray-300 mt-8 -mb-2"
-                data-aos="fade-down"
-                data-aos-delay="450"
-              >
-                {content.steps.map((step: any, index: any) => (
-                  <li key={index} className="flex items-center mb-2">
-                    <svg
-                      className="w-3 h-3 fill-current text-rose-400 mr-2 shrink-0"
-                      viewBox="0 0 12 12"
-                      xmlns="http://www.w3.org/2000/svg"
+    <div className="relative overflow-hidden bg-blue-600 dark:bg-blue-600">
+      <main>
+        <div className=" pt-10 sm:pt-16 lg:overflow-hidden lg:pb-14 lg:pt-8">
+          <div className="mx-auto max-w-max lg:px-8">
+            <div className="lg:grid lg:grid-cols-2 lg:gap-8">
+              <div className="mx-auto max-w-md px-6 sm:max-w-2xl sm:text-center lg:flex lg:items-center lg:px-0 lg:text-left">
+                <div className="lg:py-24">
+                  <div className="hidden sm:mb-5 sm:flex sm:justify-center lg:justify-start">
+                    <a
+                      href={content.ctaButtonLink}
+                      className="flex items-center rounded-full bg-gray-200 p-1 pr-2  text-gray-900 hover:text-gray-700 sm:text-base lg:text-sm xl:text-base"
                     >
-                      <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
-                    </svg>
-                    <span>{step.description}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Mobile mockup */}
-            <div
-              className="md:col-span-5 lg:col-span-5 text-center md:text-right"
-              data-aos="fade-up"
-              data-aos-delay="450"
-            >
-              <img src={content.heroImage} alt="Hero image" />
+                      <span className="rounded-full bg-blue-500 px-3 py-0.5 text-sm font-semibold leading-5 text-white">
+                        {content.ctaButtonText1}
+                      </span>
+                      <span className="ml-4 text-sm">
+                        {content.ctaButtonText2}
+                      </span>
+                      <ChevronRightIcon
+                        aria-hidden="true"
+                        className="ml-2 h-5 w-5 text-gray-500"
+                      />
+                    </a>
+                  </div>
+                  <h1 className="text-4xl font-bold tracking-tight dark:text-white text-gray-900 sm:text-6xl lg:mt-6 xl:text-5xl">
+                    <span className="block">{content.title}</span>
+                  </h1>
+                  <p className="mt-3 text-base text-gray-100 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
+                    {content.subtitle}
+                  </p>
+                  <div className="mt-10 sm:mt-12">
+                    <form action="#" className="sm:mx-auto sm:max-w-xl lg:mx-0">
+                      <div className="sm:flex">
+                        <div className="min-w-0 flex-1">
+                          <label htmlFor="email" className="sr-only">
+                            Email address
+                          </label>
+                          <input
+                            id="email"
+                            type="email"
+                            placeholder={content.cta.ctaPlaceholder}
+                            className="block w-full rounded-md border-0 px-4 py-3 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-offset-2 focus:ring-offset-gray-900"
+                          />
+                        </div>
+                        <div className="mt-3 sm:ml-3 sm:mt-0">
+                          <button
+                            type="submit"
+                            className="block w-full rounded-md bg-rose-500 px-4 py-3 font-medium text-white shadow hover:bg-rose-400 focus:outline-none focus:ring-2 focus:ring-rose-300 focus:ring-offset-2 focus:ring-offset-gray-900"
+                          >
+                            {content.cta.label}
+                          </button>
+                        </div>
+                      </div>
+                      <p className="mt-3 text-sm text-gray-100 sm:mt-4">
+                        {content.cta.ctaDescription}
+                      </p>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div className="-mb-16 mt-12 sm:-mb-48 lg:relative lg:m-0">
+                <div className="mx-auto max-w-md px-6 sm:max-w-2xl lg:max-w-none lg:px-0">
+                  {/* Illustration taken from Lucid Illustrations: https://lucid.pixsellz.io/ */}
+                  <img
+                    alt=""
+                    src={content.heroImage}
+                    className="w-full lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-auto lg:max-w-none rounded-3xl"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+
+        {/* More main page content here... */}
+      </main>
+    </div>
   );
 }

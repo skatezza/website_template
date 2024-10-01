@@ -24,7 +24,7 @@ import UserImage18 from "@/public/images//user-18.jpg";
 import UserImage19 from "@/public/images//user-19.jpg";
 import UserImage20 from "@/public/images//user-20.jpg";
 
-export default function TestimonialsCircles() {
+export default function TestimonialsCircles(content: any) {
   const [commentOn, setCommentOn] = useState<boolean>(false);
   const [active, setActive] = useState<number>(0);
   const [items] = useState([

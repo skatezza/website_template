@@ -48,7 +48,7 @@ export default function FeaturesGallery({ content }: { content: any }) {
                 </svg>
               </div>
               <div className="sm:text-lg font-medium dark:text-gray-300">
-                Founded in 2017
+                {content.aboutService1}
               </div>
             </div>
 
@@ -77,7 +77,7 @@ export default function FeaturesGallery({ content }: { content: any }) {
                 </svg>
               </div>
               <div className="sm:text-lg font-medium dark:text-gray-300">
-                $20M+ Achieved
+                {content.aboutService2}
               </div>
             </div>
 
@@ -106,7 +106,7 @@ export default function FeaturesGallery({ content }: { content: any }) {
                 </svg>
               </div>
               <div className="sm:text-lg font-medium dark:text-gray-300">
-                10.000+ Websites
+                {content.aboutService3}
               </div>
             </div>
 
@@ -118,7 +118,7 @@ export default function FeaturesGallery({ content }: { content: any }) {
                   aria-hidden="true"
                 ></div>
                 <svg
-                  className="w-20 h-20 fill-current text-pink-500"
+                  className="size-20 fill-current text-pink-500"
                   viewBox="0 0 80 80"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -126,7 +126,7 @@ export default function FeaturesGallery({ content }: { content: any }) {
                 </svg>
               </div>
               <div className="sm:text-lg font-medium dark:text-gray-300">
-                1M+ Customers
+                {content.aboutService4}
               </div>
             </div>
           </div>
@@ -138,7 +138,7 @@ export default function FeaturesGallery({ content }: { content: any }) {
           >
             <Image
               className="col-span-4"
-              src={AboutImage01}
+              src={content.aboutImage1}
               width={360}
               height={270}
               alt="About grid 01"
@@ -147,7 +147,7 @@ export default function FeaturesGallery({ content }: { content: any }) {
             />
             <Image
               className="col-span-3"
-              src={AboutImage02}
+              src={content.aboutImage2}
               width={270}
               height={270}
               alt="About grid 02"
@@ -157,7 +157,7 @@ export default function FeaturesGallery({ content }: { content: any }) {
             />
             <Image
               className="col-span-5"
-              src={AboutImage03}
+              src={content.aboutImage3}
               width={450}
               height={270}
               alt="About grid 03"
@@ -167,7 +167,7 @@ export default function FeaturesGallery({ content }: { content: any }) {
             />
             <Image
               className="col-span-3"
-              src={AboutImage04}
+              src={content.aboutImage4}
               width={270}
               height={270}
               alt="About grid 04"
@@ -177,7 +177,7 @@ export default function FeaturesGallery({ content }: { content: any }) {
             />
             <Image
               className="col-span-5"
-              src={AboutImage05}
+              src={content.aboutImage5}
               width={450}
               height={270}
               alt="About grid 05"
@@ -187,7 +187,7 @@ export default function FeaturesGallery({ content }: { content: any }) {
             />
             <Image
               className="col-span-4"
-              src={AboutImage06}
+              src={content.aboutImage6}
               width={360}
               height={270}
               alt="About grid 06"

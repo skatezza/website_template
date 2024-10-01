@@ -46,11 +46,10 @@ export default function HeroAbout({ content }: { content: any }) {
                 <h1 className="h1 lg:text-6xl font-rose-hat-display">
                   {content.title}
                 </h1>
+                <p className="text-xl text-gray-600 dark:text-gray-300">
+                  {content.subtitle}
+                </p>
               </div>
-              <div
-                className="absolute bottom-0 -mb-8 w-0.5 h-16 bg-gray-300 dark:bg-gray-700"
-                aria-hidden="true"
-              ></div>
             </div>
           </div>
         </div>
