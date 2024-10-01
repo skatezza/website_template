@@ -2,191 +2,171 @@ export const copyConfig = {
   // Header
   header: {
     logo: {
-      src: "/images/logo.svg",
-      alt: "Appy logo",
+      src: "/images/cr-batiment-pro-logo.svg",
+      alt: "CR Batiment Pro logo",
     },
     navItems: [
-      { label: "Home", href: "/" },
-      { label: "About", href: "/about" },
-      { label: "Blog", href: "/blog" },
-      { label: "Testimonials", href: "/testimonials" },
+      { label: "Accueil", href: "/" },
+      { label: "À propos", href: "/about" },
+      { label: "Témoignages", href: "/testimonials" },
       { label: "Contact", href: "/contact" },
     ],
-  },
-
-  // Footer
-  footer: {
-    logo: {
-      src: "/images/logo.svg",
-      alt: "Appy logo",
-    },
-    copyright: "© 2023 Appy. All rights reserved.",
-    socialLinks: [
-      { platform: "Twitter", href: "#" },
-      { platform: "GitHub", href: "#" },
-      { platform: "Facebook", href: "#" },
-      { platform: "Instagram", href: "#" },
-      { platform: "LinkedIn", href: "#" },
-    ],
+    ctaButton: "Contactez-nous",
   },
 
   // Home page
   home: {
+    metadata: {
+      title: "Accueil - CR Batiment Pro",
+      description: "Page d'accueil de CR Batiment Pro",
+    },
     hero: {
-      title: "Your website, reimagined",
+      heroImage: "/images/electricien.jpg",
+      title: "Votre électricien de confiance à Paris",
       subtitle:
-        "Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.",
+        "Interventions rapides 24h/24 et 7j/7 pour tous vos besoins en électricité générale.",
       cta: {
-        label: "HELLO code",
-        href: "#",
+        label: "Demander un devis",
+        href: "/contact",
+        ctaPlaceholder: "Entrez votre numéro de téléphone",
       },
       steps: [
-        { description: "Lorem ipsum dolor amet sit consect adipiscing." },
-        { description: "Excepteur sint occaecat cupidatat non proident." },
-        { description: "Lorem ipsum is placeholder text commonly." },
+        { description: "Artisans diplômés à votre service" },
+        { description: "Garantie décennale sur tous nos travaux" },
+        { description: "Intervention d'urgence ou sur rendez-vous" },
       ],
     },
     featuresBlocks: {
-      title: "Put clarity at the center of your website",
+      title: "Nos services",
       features: [
         {
-          title: "Simpler Sharing",
-          description: "Lorem ipsum dolor amet sit consect adipiscing.",
-          icon: "",
-
-          href: "#0",
+          title: "Installation électrique",
+          description: "Câblage, tableaux électriques, mise aux normes",
+          icon: "bolt",
+          href: "https://hello.fr",
           color: {
-            from: "teal-500",
-            to: "teal-400",
-            darkTo: "teal-500",
+            from: "rose-500",
+            to: "rose-400",
+            darkTo: "rose-500",
           },
         },
         {
-          title: "Intuitive Interface",
-          description: "Excepteur sint occaecat cupidatat non proident.",
-          icon: "",
-          href: "#0",
+          title: "Dépannage 24/7",
+          description: "Intervention rapide pour toute panne électrique",
+          icon: "wrench",
+          href: "https://hello.fr",
           color: {
-            from: "purple-500",
-            to: "purple-400",
-            darkTo: "purple-500",
+            from: "rose-500",
+            to: "rose-400",
+            darkTo: "rose-500",
           },
         },
         {
-          title: "Powerful Integrations",
-          description: "Lorem ipsum is placeholder text commonly used.",
-          icon: "",
-
-          href: "#0",
+          title: "Rénovation électrique",
+          description: "Mise à niveau de votre installation existante",
+          icon: "home",
+          href: "https://hello.fr",
           color: {
-            from: "indigo-500",
-            to: "indigo-400",
-            darkTo: "indigo-500",
+            from: "rose-500",
+            to: "rose-400",
+            darkTo: "rose-500",
           },
         },
         {
-          title: "Advanced Security",
-          description: "Duis aute irure dolor in reprehenderit in voluptate.",
-          icon: "",
-          href: "#0",
+          title: "Domotique",
+          description: "Solutions intelligentes pour votre habitat",
+          icon: "💡",
+          href: "https://hello.fr",
           color: {
-            from: "pink-500",
-            to: "pink-400",
-            darkTo: "pink-500",
+            from: "rose-500",
+            to: "rose-400",
+            darkTo: "rose-500",
           },
         },
       ],
     },
     process: {
-      title: "Built exclusively for you",
+      title: "Notre processus d'intervention",
       description:
-        "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit laborum — semper quis lectus nulla.",
+        "Chez CR Batiment Pro, nous suivons un processus rigoureux pour garantir la qualité de nos services et votre satisfaction. Voici comment nous procédons :",
       steps: [
         {
           number: 1,
-          title: "Apply for a product",
+          title: "Prise de contact",
           description:
-            "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            "Contactez-nous par téléphone ou via notre formulaire en ligne. Nous évaluons vos besoins et planifions une intervention.",
           image: {
-            src: "/images/mockup-image-01.jpg",
-            alt: "App screen 01",
+            src: "/images/contact-electricien.jpg",
+            alt: "Prise de contact avec CR Batiment Pro",
           },
         },
         {
           number: 2,
-          title: "Complete the application",
+          title: "Diagnostic et devis",
           description:
-            "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            "Notre électricien se rend sur place pour effectuer un diagnostic précis. Nous vous fournissons un devis détaillé et transparent.",
           image: {
-            src: "/images/mockup-image-02.jpg",
-            alt: "App screen 02",
+            src: "/images/diagnostic-electrique.jpg",
+            alt: "Diagnostic électrique par CR Batiment Pro",
           },
         },
         {
           number: 3,
-          title: "Get approved",
+          title: "Intervention et suivi",
           description:
-            "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            "Nous réalisons les travaux selon les normes en vigueur. Un suivi est assuré pour garantir votre entière satisfaction.",
           image: {
-            src: "/images/mockup-image-03.jpg",
-            alt: "App screen 03",
-          },
-        },
-      ],
-    },
-    testimonials: {
-      title: "Don't take our word for it",
-      subtitle:
-        "Vitae aliquet nec ullamcorper sit amet risus nullam eget felis semper quis lectus nulla at volutpat diam ut venenatis tellus—in ornare.",
-      items: [
-        {
-          quote:
-            "Appy is a game-changer for our business. The ease of use and powerful features have significantly improved our workflow.",
-          name: "Alexandra Smith",
-          role: "Founder",
-          company: "Acme Inc.",
-          image: {
-            src: "/images/testimonial-01.jpg",
-            alt: "Testimonial 01",
-          },
-        },
-        {
-          quote:
-            "We've seen a 50% increase in productivity since implementing Appy. It's become an essential tool for our team.",
-          name: "Michael Johnson",
-          role: "CTO",
-          company: "TechCorp",
-          image: {
-            src: "/images/testimonial-02.jpg",
-            alt: "Testimonial 02",
-          },
-        },
-        {
-          quote:
-            "The customer support at Appy is outstanding. They're always quick to respond and go above and beyond to help.",
-          name: "Emily Davis",
-          role: "Marketing Manager",
-          company: "GrowthCo",
-          image: {
-            src: "/images/testimonial-03.jpg",
-            alt: "Testimonial 03",
+            src: "/images/intervention-electrique.jpg",
+            alt: "Intervention électrique par CR Batiment Pro",
           },
         },
       ],
     },
     cta: {
-      title: "Ready to get started?",
+      title: "Prêt à faire appel à nos services ?",
       subtitle:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit nemo expedita voluptas culpa sapiente.",
-      buttonText: "Get started",
+        "Que ce soit pour une urgence ou un projet planifié, notre équipe d'électriciens professionnels est là pour vous.",
+      buttonText: "Contactez-nous",
       buttonLink: "/contact",
     },
-    // Add more sections as needed
   },
 
   // About page
+  // About page
   about: {
-    // Add content for the about page
+    bigHeroBg: "/images/hero-bg-02.jpg",
+    heroImage: "/images/hero-bg.jpg",
+    title: "À propos de CR Batiment Pro",
+    subtitle: "Votre partenaire de confiance en électricité depuis 2010",
+    description:
+      "CR Batiment Pro est une entreprise d'électricité générale basée à Paris. Forte d'une expérience de plus de 10 ans, notre équipe d'artisans diplômés intervient rapidement 7j/7 et 24h/24 pour tous vos besoins en électricité, que ce soit en urgence ou sur rendez-vous.",
+    values: [
+      {
+        title: "Professionnalisme",
+        description:
+          "Nos électriciens sont tous diplômés et formés aux dernières normes électriques.",
+      },
+      {
+        title: "Réactivité",
+        description:
+          "Nous intervenons rapidement, 24h/24 et 7j/7, pour répondre à vos urgences.",
+      },
+      {
+        title: "Qualité",
+        description:
+          "Tous nos travaux sont couverts par une garantie décennale pour votre tranquillité d'esprit.",
+      },
+    ],
+    aboutFeaturesTitle: "Nos services",
+    aboutFeaturesDescription:
+      "Chez CR Batiment Pro, nous proposons une gamme complète de services d'électricité pour tous vos besoins, de la simple réparation à la rénovation complète.",
+    team: [
+      {
+        name: "Charles Renaud",
+        role: "Fondateur & Électricien en chef",
+        image: "/images/charles-renaud.jpg",
+      },
+    ],
   },
 
   // Blog page
@@ -196,11 +176,148 @@ export const copyConfig = {
 
   // Testimonials page
   testimonials: {
-    // Add content for the testimonials page
+    title: "Ce que disent nos clients",
+    subtitle:
+      "Découvrez les expériences de nos clients satisfaits avec CR Batiment Pro.",
+    items: [
+      {
+        quote:
+          "Très bonne expérience pour le remplacement d'un tablier complet fait avec du très grand professionnalisme. Pro dans leur travail, engagements et rigueur. Je recommande fortement.",
+        name: "BakÀRizConnais",
+        role: "Client",
+        company: "Houilles",
+        image: {
+          src: "/images/testimonial-01.jpg",
+          alt: "Témoignage client",
+        },
+      },
+    ],
+    cta: {
+      title: "Besoin d'un électricien ?",
+      subtitle:
+        "Contactez CR Batiment Pro pour tous vos projets d'électricité. Devis gratuit et intervention rapide.",
+      buttonText: "Nous contacter",
+      buttonLink: "/contact",
+    },
+  },
+  cta: {
+    title: "Besoin d'un électricien ?",
+    subtitle:
+      "Contactez CR Batiment Pro pour tous vos projets d'électricité. Devis gratuit et intervention rapide.",
+    buttonText: "Nous contacter",
+    buttonLink: "/contact",
   },
 
   // Contact page
   contact: {
-    // Add content for the contact page
+    metadata: {
+      title: "Contact - CR Batiment Pro",
+      description: "Page description",
+    },
+    header: {
+      title: "Contactez-nous",
+      subtitle:
+        "Nous vous enverrons un SMS avec une confirmation de réception.",
+    },
+    form: {
+      firstName: {
+        label: "Prénom",
+        placeholder: "Entrez votre prénom",
+      },
+      lastName: {
+        label: "Nom",
+        placeholder: "Entrez votre nom",
+      },
+      company: {
+        label: "Entreprise",
+        placeholder: "Entrez le nom de votre entreprise",
+      },
+      phone: {
+        label: "Numéro de téléphone",
+        placeholder: "Entrez votre numéro de téléphone",
+      },
+      country: {
+        label: "Pays",
+        options: ["France"],
+      },
+      message: {
+        label: "Détails",
+        optional: "Facultatif",
+        placeholder: "Qu'est-ce que vous souhaitez ?",
+      },
+      role: {
+        label: "Dites-nous-en plus sur vos besoins",
+        options: ["Bricolage", "Rénovation", "Installation", "Autre"],
+      },
+      submit: {
+        text: "Envoyer",
+      },
+    },
   },
+
+  // Footer
+  footer: {
+    logo: {
+      src: "/images/cr-batiment-pro-logo.svg",
+      alt: "CR Batiment Pro logo",
+    },
+    copyright: "© 2024 CR Batiment Pro. Tous droits réservés.",
+    socialLinks: [
+      {
+        platform: "Facebook",
+        href: "https://www.facebook.com/crbatimentpro",
+      },
+      {
+        platform: "Instagram",
+        href: "https://www.instagram.com/crbatimentpro",
+      },
+      {
+        platform: "LinkedIn",
+        href: "https://www.linkedin.com/company/slowestudio",
+      },
+      {
+        platform: "X",
+        href: "https://www.x.com/crbatimentpro",
+      },
+      {
+        platform: "TikTok",
+        href: "https://www.tiktok.com/@crbatimentpro",
+      },
+      {
+        platform: "Youtube",
+        href: "https://www.youtube.com/crbatimentpro",
+      },
+    ],
+  },
+  footerEyebrow: "Contactez-nous",
+  footerTitle1: "Besoin d'un électricien professionnel ?",
+  footerTitle2: "Nous sommes à votre service 24h/24, 7j/7",
+  footerSubtitle:
+    "CR BATIMENT PRO est votre partenaire de confiance pour tous vos besoins en électricité. Que ce soit pour une urgence ou un projet planifié, notre équipe d'artisans diplômés est là pour vous.",
+  footerCTALink: "/contact",
+  footerCTAButton: "Contactez-nous",
+
+  // Footer Address
+  footerAddressTitle: "Notre adresse",
+  footerAddress1Title: "Paris XIX",
+  footerAddress1Line1: "CR Batiment Pro",
+  footerAddress1Line2: "55 rue Petit",
+  footerAddress1Line3: "75019 Paris",
+
+  // Footer Contact
+  footerContactTitle: "Nous contacter",
+  footerPhoneNumber: "07 55 81 92 18",
+  footerEmail: "contact@crbatimentpro.fr",
+
+  // Footer Hours
+  footerHoursTitle: "Horaires",
+  footerHours: "Ouvert 7j/7, 24h/24",
+
+  // Footer Social Links
+  footerCopyright: "© 2024 CR Batiment Pro. Tous droits réservés.",
+  footerXLink: "https://x.com/crbatimentpro",
+  footerFacebookLink: "https://facebook.com/crbatimentpro",
+  footerInstagramLink: "https://instagram.com/crbatimentpro",
+  footerLinkedInLink: "https://linkedin.com/company/crbatimentpro",
+  footerLogo: "/images/cr-batiment-pro-logo.svg",
 };

@@ -5,13 +5,15 @@ import Process from "@/components/process";
 import Testimonials from "@/components/testimonials";
 import CTA from "@/components/cta";
 
+export const metadata = copyConfig.home.metadata;
+
 export default function Home() {
   return (
     <>
       <HeroHome content={copyConfig.home.hero} />
       <FeaturesBlocks content={copyConfig.home.featuresBlocks} />
       <Process content={copyConfig.home.process} />
-      <Testimonials content={copyConfig.home.testimonials} />
+      <Testimonials content={copyConfig.testimonials} />
       <CTA content={copyConfig.home.cta} />
     </>
   );

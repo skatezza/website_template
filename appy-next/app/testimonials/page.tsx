@@ -18,7 +18,7 @@ export default function Testimonials() {
       <Video />
       <Carousel />
       <Circles />
-      <Cta content={copyConfig.home.cta} />
+      <Cta content={copyConfig.testimonials.cta} />
     </>
   );
 }

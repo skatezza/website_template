@@ -10,17 +10,18 @@ import Career from "@/components/career";
 import FeaturesAnimation from "@/components/features-animation";
 import Team from "@/components/team";
 import CtaContact from "@/components/cta-contact";
+import { copyConfig } from "@/app/copy/copy-config";
 
 export default function About() {
   return (
     <>
-      <Hero />
-      <FeaturesGallery />
-      <Timeline />
-      <Career />
-      <FeaturesAnimation />
-      <Team />
-      <CtaContact />
+      <Hero content={copyConfig.about} />
+      <FeaturesGallery content={copyConfig.about} />
+      <Timeline content={copyConfig.about} />
+      <Career content={copyConfig.about} />
+      <FeaturesAnimation content={copyConfig.about} />
+      <Team content={copyConfig.about} />
+      <CtaContact content={copyConfig.about} />
     </>
   );
 }

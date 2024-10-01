@@ -11,7 +11,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import Header from "@/components/ui/header";
-import Footer from "@/components/ui/footer";
+import { FooterAddress } from "@/components/ui/footer-address";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -21,7 +21,7 @@ const inter = Inter({
 
 const redhat = Red_Hat_Display({
   subsets: ["latin"],
-  variable: "--font-red-hat-display",
+  variable: "--font-rose-hat-display",
   display: "swap",
 });
 
@@ -43,13 +43,13 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       {/* suppressHydrationWarning: https://github.com/vercel/next.js/issues/44343 */}
       <body
-        className={`${inter.variable} ${redhat.variable} font-inter antialiased bg-white text-gray-900 dark:bg-blue-700 dark:text-gray-100 tracking-tight`}
+        className={`${inter.variable} ${redhat.variable} font-inter antialiased bg-white text-gray-900 dark:bg-zinc-900 dark:text-gray-100 tracking-tight`}
       >
         <Theme>
           <div className="flex flex-col min-h-screen overflow-hidden">
             <Header />
             <main className="grow">{children}</main>
-            <Footer />
+            <FooterAddress />
           </div>
         </Theme>
       </body>

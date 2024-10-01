@@ -24,7 +24,7 @@ module.exports = {
           800: '#2E2E33',
           900: '#1D1D20',
         },
-        teal: {
+        red: {
           50: '#F4FFFD',
           100: '#E6FFFA',
           200: '#B2F5EA',
@@ -84,7 +84,7 @@ module.exports = {
       },
       fontFamily: {
         inter: ['var(--font-inter)', 'sans-serif'],
-        'red-hat-display': ['var(--font-red-hat-display)', 'sans-serif'],
+        'red-hat-display': ['var(--font-rose-hat-display)', 'sans-serif'],
       },
       fontSize: {
         xs: ['0.75rem', { lineHeight: '1.5' }],

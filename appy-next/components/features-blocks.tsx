@@ -22,7 +22,7 @@ export default function FeaturesBlocks({ content }: FeatureBlocksProps) {
         <div className="py-12 md:py-20 border-t border-gray-200 dark:border-gray-800">
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2 font-red-hat-display">{content.title}</h2>
+            <h2 className="h2 font-rose-hat-display">{content.title}</h2>
           </div>
 
           {/* Items */}
@@ -40,7 +40,7 @@ export default function FeaturesBlocks({ content }: FeatureBlocksProps) {
                 data-aos-delay={index * 100}
               >
                 {feature.icon}
-                <div className="font-red-hat-display text-xl font-black tracking-tighter mb-1">
+                <div className="font-rose-hat-display text-xl font-black tracking-tighter mb-1">
                   {feature.title}
                 </div>
                 <div className="grow opacity-80 mb-4">

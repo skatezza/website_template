@@ -34,7 +34,7 @@ export default function Process({ content }: { content: any }) {
                 {index < steps.length - 1 && (
                   <div
                     aria-hidden="true"
-                    className="absolute h-px opacity-50 bg-gradient-to-r from-white via-teal-400 to-white dark:from-gray-900 dark:via-teal-400 dark:to-gray-900 hidden md:block"
+                    className="absolute h-px opacity-50 bg-gradient-to-r from-white via-rose-400 to-white dark:from-gray-900 dark:via-rose-400 dark:to-gray-900 hidden md:block"
                     style={{
                       width: "calc(100% - 48px)",
                       left: "calc(50% + 48px)",
@@ -45,7 +45,7 @@ export default function Process({ content }: { content: any }) {
                   </div>
                 )}
                 {/* Number */}
-                <div className="w-12 h-12 rounded-full bg-teal-400 dark:bg-teal-600 dark:bg-opacity-25 flex justify-center items-center text-white dark:text-teal-400 font-medium mb-8 lg:mb-12">
+                <div className="w-12 h-12 rounded-full bg-rose-400 dark:bg-rose-600 dark:bg-opacity-25 flex justify-center items-center text-white dark:text-rose-400 font-medium mb-8 lg:mb-12">
                   {step.number}
                 </div>
                 <Image
