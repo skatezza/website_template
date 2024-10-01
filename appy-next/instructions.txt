@@ -1,0 +1,209 @@
+# Appy boilerplate project
+
+## Project overview
+This project is focused on developing a reusable boilerplate for the Appy landing page template.
+
+## Project goals
+Our goals for this project include:
+- Allowing full landing page copy edits via a single copy-config.ts file, which you'll create in this project
+- The copy-config.ts file will be used to update both the landing page copy, as well as the header and footer but also the image assets, and associated alt text
+- The goal is to have a single source of truth for all copy and images used in the project, so that updates are easy and can be made centrally
+
+## Instructions
+- You will read the entry point of the project in src/app/page.tsx to understand the project structure
+- You will create the copy-config.ts file in the src/app/copy directory, and insert the necessary key-value pairs for the copy and image assets we will update
+- You will start by updating each component contained in src/app/page.tsx to transform the existing copy and images to match the copy and images you've defined in the copy-config.ts file
+- You will also update Header and Footer copy (Header from "@/components/ui/header"; and Footer from "@/components/ui/footer";)
+- You will use the copy-config.ts file to update the landing page copy and image assets
+
+## Code quality and standards
+- We aim to keep the code minimal across all sections
+- Emphasis on maintaining highly reusable sections
+
+## Project structure
+.
+├── CHANGELOG.md
+├── README.md
+├── app
+│   ├── about
+│   │   └── page.tsx
+│   ├── api
+│   │   └── hello
+│   │       └── route.ts
+│   ├── blog
+│   │   ├── [slug]
+│   │   │   └── page.tsx
+│   │   ├── page.tsx
+│   │   └── sidebar.tsx
+│   ├── contact
+│   │   └── page.tsx
+│   ├── css
+│   │   ├── additional-styles
+│   │   │   ├── range-slider.css
+│   │   │   ├── theme.css
+│   │   │   ├── toggle-switch.css
+│   │   │   └── utility-patterns.css
+│   │   └── style.css
+│   ├── help
+│   │   ├── content.tsx
+│   │   └── page.tsx
+│   ├── layout.tsx
+│   ├── not-found.tsx
+│   ├── page.tsx
+│   ├── testimonials
+│   │   └── page.tsx
+│   └── theme-provider.tsx
+├── bun.lockb
+├── components
+│   ├── career.tsx
+│   ├── carousel.tsx
+│   ├── clients.tsx
+│   ├── cta-contact.tsx
+│   ├── cta.tsx
+│   ├── features-animation.tsx
+│   ├── features-blocks.tsx
+│   ├── features-gallery.tsx
+│   ├── hero-about.tsx
+│   ├── hero-help.tsx
+│   ├── hero-home.tsx
+│   ├── hero-testimonials.tsx
+│   ├── mdx
+│   │   ├── image.tsx
+│   │   ├── link.tsx
+│   │   └── mdx.tsx
+│   ├── modal-video-iphone.tsx
+│   ├── modal-video.tsx
+│   ├── newsletter.tsx
+│   ├── page-illustration.tsx
+│   ├── post-date.tsx
+│   ├── post-item.tsx
+│   ├── pricing-tables.tsx
+│   ├── process.tsx
+│   ├── related-links.tsx
+│   ├── related-posts-01.tsx
+│   ├── related-posts-02.tsx
+│   ├── stats.tsx
+│   ├── tabs.tsx
+│   ├── team.tsx
+│   ├── testimonials-blocks.tsx
+│   ├── testimonials-carousel.tsx
+│   ├── testimonials-circles.tsx
+│   ├── testimonials-video.tsx
+│   ├── timeline.tsx
+│   ├── ui
+│   │   ├── footer.tsx
+│   │   ├── header.tsx
+│   │   ├── logo.tsx
+│   │   ├── mobile-menu.tsx
+│   │   └── theme-toggle.tsx
+│   └── utils
+│       └── dropdown.tsx
+├── content
+│   ├── 20-elements-of-a-modern-website-design.mdx
+│   ├── 20-unique-places-to-find-web-design-inspiration.mdx
+│   ├── appy-launches-new-thematic-solutions.mdx
+│   ├── how-to-create-a-profile-page-using-appy.mdx
+│   ├── launch-lessons-the-creators-of-intrusive-inc.mdx
+│   ├── what-to-look-for-in-a-digital-portfolio.mdx
+│   └── why-your-customers-needs-a-responsive-website.mdx
+├── contentlayer.config.js
+├── instructions.txt
+├── next-env.d.ts
+├── next.config.js
+├── package.json
+├── postcss.config.js
+├── public
+│   ├── favicon.ico
+│   ├── images
+│   │   ├── 404.jpg
+│   │   ├── about-grid-01.jpg
+│   │   ├── about-grid-02.jpg
+│   │   ├── about-grid-03.jpg
+│   │   ├── about-grid-04.jpg
+│   │   ├── about-grid-05.jpg
+│   │   ├── about-grid-06.jpg
+│   │   ├── about-hero.jpg
+│   │   ├── career-01.jpg
+│   │   ├── career-02.jpg
+│   │   ├── career-03.jpg
+│   │   ├── career-04.jpg
+│   │   ├── career-05.jpg
+│   │   ├── career-06.jpg
+│   │   ├── carousel-item-01.jpg
+│   │   ├── carousel-item-02.jpg
+│   │   ├── carousel-item-03.jpg
+│   │   ├── carousel-item-04.jpg
+│   │   ├── carousel-item-05.jpg
+│   │   ├── favicon.png
+│   │   ├── hero-bg-02.jpg
+│   │   ├── hero-bg-03.jpg
+│   │   ├── hero-bg.jpg
+│   │   ├── iphone-mockup.png
+│   │   ├── mockup-image-01.jpg
+│   │   ├── mockup-image-02.jpg
+│   │   ├── mockup-image-03.jpg
+│   │   ├── mockup-image-04.jpg
+│   │   ├── news-01.jpg
+│   │   ├── news-02.jpg
+│   │   ├── news-03.jpg
+│   │   ├── news-04.jpg
+│   │   ├── news-05.jpg
+│   │   ├── news-06.jpg
+│   │   ├── news-author-01.jpg
+│   │   ├── news-author-02.jpg
+│   │   ├── news-author-03.jpg
+│   │   ├── news-author-04.jpg
+│   │   ├── news-author-05.jpg
+│   │   ├── news-author-06.jpg
+│   │   ├── news-inner-image-left.jpg
+│   │   ├── news-inner-image.jpg
+│   │   ├── play-button.svg
+│   │   ├── related-post-01.jpg
+│   │   ├── related-post-02.jpg
+│   │   ├── related-post-03.jpg
+│   │   ├── related-post-04.jpg
+│   │   ├── related-post-05.jpg
+│   │   ├── related-post-06.jpg
+│   │   ├── team-member-01.jpg
+│   │   ├── team-member-02.jpg
+│   │   ├── team-member-03.jpg
+│   │   ├── team-member-04.jpg
+│   │   ├── team-member-05.jpg
+│   │   ├── team-member-06.jpg
+│   │   ├── team-member-07.jpg
+│   │   ├── team-member-08.jpg
+│   │   ├── team-member-09.jpg
+│   │   ├── team-member-10.jpg
+│   │   ├── testimonial-01.jpg
+│   │   ├── testimonial-02.jpg
+│   │   ├── testimonial-03.jpg
+│   │   ├── testimonial-04.jpg
+│   │   ├── user-1.jpg
+│   │   ├── user-10.jpg
+│   │   ├── user-11.jpg
+│   │   ├── user-12.jpg
+│   │   ├── user-13.jpg
+│   │   ├── user-14.jpg
+│   │   ├── user-15.jpg
+│   │   ├── user-16.jpg
+│   │   ├── user-17.jpg
+│   │   ├── user-18.jpg
+│   │   ├── user-19.jpg
+│   │   ├── user-2.jpg
+│   │   ├── user-20.jpg
+│   │   ├── user-3.jpg
+│   │   ├── user-4.jpg
+│   │   ├── user-5.jpg
+│   │   ├── user-6.jpg
+│   │   ├── user-7.jpg
+│   │   ├── user-8.jpg
+│   │   ├── user-9.jpg
+│   │   ├── video-testimonial.jpg
+│   │   └── video-thumb.jpg
+│   └── videos
+│       └── video.mp4
+├── repopack-output.txt
+├── tailwind.config.js
+└── tsconfig.json
+
+20 directories, 164 files
